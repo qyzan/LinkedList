@@ -33,18 +33,19 @@ print(q.qsize())  # Output: 2
 Tree adalah struktur data yang terdiri dari node atau simpul yang terhubung melalui edge atau sisi. Setiap simpul pada tree dapat memiliki beberapa simpul anak, kecuali simpul-simpul yang berada pada level terakhir atau disebut sebagai daun (leaf).
 
 Dalam Python, tree dapat diimplementasikan menggunakan kelas dan objek. Berikut ini adalah contoh implementasi sederhana dari tree dalam Python:
+
 class TreeNode:
+
     def __init__(self, data):
         self.data = data
         self.children = []
-    
     def add_child(self, node):
         self.children.append(node)
-        
     def traverse(self):
         print(self.data)
         for child in self.children:
             child.traverse()
+
 Pada contoh di atas, kita menggunakan kelas TreeNode untuk merepresentasikan simpul pada tree. Setiap simpul memiliki beberapa properti, yaitu data dan children. Properti data digunakan untuk menyimpan nilai atau data pada simpul, dan properti children digunakan untuk menyimpan daftar simpul anak. Method add_child digunakan untuk menambahkan simpul anak ke dalam simpul tertentu. Method traverse digunakan untuk mengeksekusi fungsi print untuk semua simpul pada tree, dimulai dari simpul yang diinisialisasi.
 
 **Contoh penggunaan kelas TreeNode: (Terdapat pada resource)**
